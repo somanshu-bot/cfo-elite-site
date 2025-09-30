@@ -47,9 +47,15 @@ const AboutSection = () => {
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
             The Powerhouse Behind <span className="text-gradient-primary">CFO Elite</span>
           </h2>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            Ishwa Consulting stands as India's premier executive search firm, with deep expertise 
-            in CFO mandates and an unwavering commitment to excellence in leadership placement.
+          <p className="text-xl text-muted-foreground leading-relaxed mb-4">
+            <span className="font-semibold text-foreground">Ishwa</span> — meaning "leader" in Sanskrit — 
+            embodies our commitment to leadership excellence. As India's premier boutique executive search firm 
+            and proud member of <span className="font-semibold">IMD International Search Group</span>, we bring 
+            bull's-eye precision and personalized attention to every CFO mandate.
+          </p>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            CFO Elite is born from decades of deep expertise in finance leadership placement, 
+            combining big-firm quality with boutique agility.
           </p>
         </div>
 
@@ -105,7 +111,7 @@ const AboutSection = () => {
               </div>
               <h4 className="font-semibold text-foreground mb-3">Boutique Excellence</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Big-4 quality with personalized, agile service. Every client receives partner-level attention and customized solutions.
+                Bull's-eye precision meets personalized service. Big-firm quality, boutique agility. Every mandate receives partner-level attention from our leadership-focused team.
               </p>
             </div>
             
@@ -123,9 +129,9 @@ const AboutSection = () => {
               <div className="w-16 h-16 rounded-xl bg-gradient-primary flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h4 className="font-semibold text-foreground mb-3">Network Effect</h4>
+              <h4 className="font-semibold text-foreground mb-3">Global Network, Local Expertise</h4>
               <p className="text-sm text-muted-foreground leading-relaxed">
-                Exclusive access to top-tier finance leaders, extensive industry connections, and deep cultural understanding.
+                Leverage IMD International Search Group's global reach with Ishwa's deep India expertise. Exclusive access to top-tier CFOs, extensive connections, and cultural intelligence.
               </p>
             </div>
           </div>

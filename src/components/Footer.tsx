@@ -33,17 +33,33 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand & Description */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="text-2xl font-bold text-accent">CFO Elite</div>
-              <div className="text-sm text-primary-foreground/70">by Ishwa</div>
+            <div className="mb-6">
+              <div className="flex items-center space-x-2 mb-2">
+                <div className="text-2xl font-bold text-accent">CFO Elite</div>
+                <div className="text-sm text-primary-foreground/70">by Ishwa</div>
+              </div>
+              <a 
+                href="https://www.ishwaconsulting.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-xs text-primary-foreground/60 hover:text-accent transition-colors inline-flex items-center"
+              >
+                Visit Ishwa Consulting →
+              </a>
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed mb-6">
-              India's premier CFO leadership partner, delivering precision in executive search, 
+            <p className="text-primary-foreground/80 leading-relaxed mb-4 text-sm">
+              India's premier CFO leadership partner, delivering bull's-eye precision in executive search, 
               strategic insights, and exclusive community for finance leaders.
+            </p>
+            <p className="text-primary-foreground/60 text-xs leading-relaxed mb-6 italic">
+              "Ishwa" — Sanskrit for "leader" — reflects our singular focus on leadership excellence 
+              and our commitment to personalized, precision-driven service.
             </p>
             <div className="flex items-center space-x-4">
               <a 
-                href="#" 
+                href="https://www.linkedin.com/company/ishwa-consulting" 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-primary-foreground/70 hover:text-accent transition-colors"
                 aria-label="LinkedIn"
               >
@@ -124,18 +140,18 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-primary-foreground/70 text-sm">
-            © {currentYear} CFO Elite by Ishwa Consulting. All rights reserved.
+            © {currentYear} CFO Elite by <a href="https://www.ishwaconsulting.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Ishwa Consulting</a>. All rights reserved.
           </div>
           
-          <div className="flex items-center space-x-6 text-sm">
+          <div className="flex items-center space-x-6 text-sm flex-wrap justify-center">
             <button className="text-primary-foreground/70 hover:text-accent transition-colors">
               Privacy Policy
             </button>
             <button className="text-primary-foreground/70 hover:text-accent transition-colors">
               Terms of Service
             </button>
-            <div className="text-primary-foreground/50">
-              Made with precision for CFO excellence
+            <div className="text-primary-foreground/50 text-xs">
+              Member of IMD International Search Group
             </div>
           </div>
         </div>
