@@ -8,59 +8,59 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Deep Navy & Charcoal Foundation */
+    /* Brand Colors - Refined Professional Palette aligned with Ishwa */
     --background: 0 0% 98%;
-    --foreground: 220 25% 15%;
+    --foreground: 215 25% 20%;
 
-    /* Primary - Deep Navy */
-    --primary: 220 45% 20%;
+    /* Primary - Professional Navy (Ishwa-inspired) */
+    --primary: 215 60% 25%;
     --primary-foreground: 0 0% 98%;
-    --primary-dark: 220 55% 15%;
+    --primary-dark: 215 70% 18%;
 
-    /* Secondary - Charcoal */
-    --secondary: 210 15% 25%;
+    /* Secondary - Sophisticated Charcoal */
+    --secondary: 210 12% 30%;
     --secondary-foreground: 0 0% 98%;
 
-    /* Accent - Metallic Gold */
-    --accent: 45 85% 60%;
-    --accent-foreground: 220 45% 20%;
-    --accent-muted: 45 45% 75%;
+    /* Accent - Refined Bronze/Copper (more subdued than gold) */
+    --accent: 25 65% 50%;
+    --accent-foreground: 0 0% 98%;
+    --accent-muted: 25 45% 65%;
 
-    /* Rust Accent */
-    --rust: 15 75% 45%;
+    /* Rust Accent - Deeper, more professional */
+    --rust: 12 60% 45%;
     --rust-foreground: 0 0% 98%;
 
     /* Neutral Palette */
-    --muted: 220 15% 95%;
-    --muted-foreground: 220 10% 45%;
-    --border: 220 15% 90%;
-    --input: 220 15% 95%;
-    --ring: 220 45% 20%;
+    --muted: 215 20% 96%;
+    --muted-foreground: 215 15% 45%;
+    --border: 215 20% 88%;
+    --input: 215 20% 96%;
+    --ring: 215 60% 25%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 220 25% 15%;
+    --card-foreground: 215 25% 20%;
 
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 220 25% 15%;
+    --popover-foreground: 215 25% 20%;
 
     /* Destructive */
-    --destructive: 0 75% 55%;
+    --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
     /* Design System Extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-dark)));
-    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(var(--accent-muted)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(215 60% 25%), hsl(215 70% 18%));
+    --gradient-accent: linear-gradient(135deg, hsl(25 65% 50%), hsl(25 45% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(215 60% 25%) 0%, hsl(210 12% 30%) 100%);
     
-    /* Shadows */
-    --shadow-premium: 0 10px 40px -10px hsl(var(--primary) / 0.2);
-    --shadow-card: 0 4px 20px -4px hsl(var(--primary) / 0.1);
-    --shadow-accent: 0 0 40px hsl(var(--accent) / 0.3);
+    /* Shadows - More refined */
+    --shadow-premium: 0 10px 40px -10px hsl(215 60% 25% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(215 60% 25% / 0.08);
+    --shadow-accent: 0 0 30px hsl(25 65% 50% / 0.2);
 
     /* Spacing & Typography */
-    --radius: 0.75rem;
+    --radius: 0.5rem;
     --font-heading: 'Inter', system-ui, sans-serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
