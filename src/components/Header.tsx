@@ -1,23 +1,30 @@
 import { useState } from 'react';
+import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'Why CFO Elite', href: '#why-cfo-elite' },
-    { label: 'Services', href: '#services' },
-    { label: 'Insights', href: '#insights' },
-    { label: 'Community', href: '#community' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '#home', isExternal: false },
+    { label: 'Why CFO Elite', href: '#why-cfo-elite', isExternal: false },
+    { label: 'Services', href: '#services', isExternal: false },
+    { label: 'Insights', href: '#insights', isExternal: false },
+    { label: 'Blog', href: '/blog', isExternal: true },
+    { label: 'Community', href: '#community', isExternal: false },
+    { label: 'Contact', href: '#contact', isExternal: false },
   ];
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+  const handleNavigation = (href: string, isExternal: boolean) => {
+    if (isExternal) {
+      navigate(href);
+    } else {
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
     }
     setIsMenuOpen(false);
   };
@@ -37,7 +44,7 @@ const Header = () => {
             {navItems.map((item) => (
               <button
                 key={item.label}
-                onClick={() => scrollToSection(item.href)}
+                onClick={() => handleNavigation(item.href, item.isExternal)}
                 className="text-foreground hover:text-primary transition-colors duration-200 font-medium"
               >
                 {item.label}
@@ -48,7 +55,7 @@ const Header = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <Button 
-              onClick={() => scrollToSection('#contact')}
+              onClick={() => handleNavigation('#contact', false)}
               className="btn-hero"
             >
               Get Started
@@ -71,14 +78,14 @@ const Header = () => {
               {navItems.map((item) => (
                 <button
                   key={item.label}
-                  onClick={() => scrollToSection(item.href)}
+                  onClick={() => handleNavigation(item.href, item.isExternal)}
                   className="text-left text-foreground hover:text-primary transition-colors duration-200 font-medium"
                 >
                   {item.label}
                 </button>
               ))}
               <Button 
-                onClick={() => scrollToSection('#contact')}
+                onClick={() => handleNavigation('#contact', false)}
                 className="btn-hero mt-4 w-full"
               >
                 Get Started
