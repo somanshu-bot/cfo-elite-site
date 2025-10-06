@@ -25,7 +25,7 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-8 leading-tight animate-fade-in text-white drop-shadow-lg">
-            India's Most Trusted Partner in CFO and Finance Leadership Hiring
+            Most Trusted Partner in CFO and Finance Leadership Hiring
           </h1>
 
           {/* Subtext */}

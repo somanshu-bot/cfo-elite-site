@@ -18,8 +18,9 @@ const StatsSection = () => {
     {
       icon: Award,
       number: "Featured",
-      label: "Economic Times, Storyboard18, and Top Media",
-      description: "Recognized thought leadership in CFO hiring"
+      label: "Top Media Coverage",
+      description: "Recognized thought leadership in CFO hiring",
+      publications: ["Economic Times", "Storyboard18", "Business Standard"]
     }
   ];
 
@@ -35,7 +36,20 @@ const StatsSection = () => {
                 </div>
                 <div className="text-4xl font-heading font-bold text-accent mb-3">{stat.number}</div>
                 <div className="text-lg font-semibold text-foreground mb-2">{stat.label}</div>
-                <div className="text-sm text-muted-foreground">{stat.description}</div>
+                <div className="text-sm text-muted-foreground mb-4">{stat.description}</div>
+                
+                {stat.publications && (
+                  <div className="flex flex-wrap gap-2 justify-center mt-4">
+                    {stat.publications.map((pub, idx) => (
+                      <span 
+                        key={idx} 
+                        className="text-xs px-3 py-1.5 bg-accent/10 text-accent-foreground rounded-full font-medium border border-accent/20"
+                      >
+                        {pub}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </CardContent>
             </Card>
           ))}
