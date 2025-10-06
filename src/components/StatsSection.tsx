@@ -52,7 +52,7 @@ const StatsSection = () => {
                         key={idx}
                         src={logo.src}
                         alt={logo.alt}
-                        className={`w-auto object-contain ${idx === 0 ? 'h-12' : idx === 2 ? 'h-10' : 'h-8'}`}
+                        className={`w-auto object-contain ${idx === 0 ? 'h-14' : idx === 2 ? 'h-12' : 'h-10'}`}
                       />
                     ))}
                   </div>
