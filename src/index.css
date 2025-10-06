@@ -2,66 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CFO Elite Design System - Premium, Professional, Authoritative */
+/* CFO Elite Design System - Ishwa Consulting Brand Extension */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
 
 @layer base {
   :root {
-    /* Brand Colors - Refined Professional Palette aligned with Ishwa */
-    --background: 0 0% 98%;
-    --foreground: 215 25% 20%;
+    /* Brand Colors - Ishwa Consulting Aligned */
+    --background: 0 0% 100%;
+    --foreground: 210 63% 11%;
 
-    /* Primary - Professional Navy (Ishwa-inspired) */
-    --primary: 215 60% 25%;
-    --primary-foreground: 0 0% 98%;
-    --primary-dark: 215 70% 18%;
+    /* Primary - Deep Navy (Ishwa Core) */
+    --primary: 210 63% 11%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 210 70% 8%;
 
-    /* Secondary - Sophisticated Charcoal */
-    --secondary: 210 12% 30%;
-    --secondary-foreground: 0 0% 98%;
+    /* Secondary - Slate Grey */
+    --secondary: 210 12% 40%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Accent - Refined Bronze/Copper (more subdued than gold) */
-    --accent: 25 65% 50%;
-    --accent-foreground: 0 0% 98%;
-    --accent-muted: 25 45% 65%;
-
-    /* Rust Accent - Deeper, more professional */
-    --rust: 12 60% 45%;
-    --rust-foreground: 0 0% 98%;
+    /* Accent - Gold */
+    --accent: 45 59% 53%;
+    --accent-foreground: 210 63% 11%;
+    --accent-muted: 45 45% 65%;
 
     /* Neutral Palette */
-    --muted: 215 20% 96%;
-    --muted-foreground: 215 15% 45%;
-    --border: 215 20% 88%;
-    --input: 215 20% 96%;
-    --ring: 215 60% 25%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 210 12% 40%;
+    --border: 210 20% 90%;
+    --input: 210 20% 96%;
+    --ring: 210 63% 11%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 215 25% 20%;
+    --card-foreground: 210 63% 11%;
 
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 215 25% 20%;
+    --popover-foreground: 210 63% 11%;
 
     /* Destructive */
     --destructive: 0 70% 50%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Design System Extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(215 60% 25%), hsl(215 70% 18%));
-    --gradient-accent: linear-gradient(135deg, hsl(25 65% 50%), hsl(25 45% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(215 60% 25%) 0%, hsl(210 12% 30%) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(210 63% 11%), hsl(210 70% 8%));
+    --gradient-accent: linear-gradient(135deg, hsl(45 59% 53%), hsl(45 45% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 63% 11%) 0%, hsl(210 12% 40%) 100%);
     
-    /* Shadows - More refined */
-    --shadow-premium: 0 10px 40px -10px hsl(215 60% 25% / 0.15);
-    --shadow-card: 0 4px 20px -4px hsl(215 60% 25% / 0.08);
-    --shadow-accent: 0 0 30px hsl(25 65% 50% / 0.2);
+    /* Shadows - Refined and subtle */
+    --shadow-premium: 0 10px 40px -10px hsl(210 63% 11% / 0.1);
+    --shadow-card: 0 4px 20px -4px hsl(210 63% 11% / 0.06);
+    --shadow-accent: 0 0 30px hsl(45 59% 53% / 0.15);
 
     /* Spacing & Typography */
-    --radius: 0.5rem;
-    --font-heading: 'Inter', system-ui, sans-serif;
+    --radius: 0.25rem;
+    --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', system-ui, sans-serif;
 
     --sidebar-background: 0 0% 98%;

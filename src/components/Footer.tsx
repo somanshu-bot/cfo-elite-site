@@ -6,18 +6,16 @@ const Footer = () => {
 
   const quickLinks = [
     { label: 'Home', href: '#home' },
-    { label: 'Why CFO Elite', href: '#why-cfo-elite' },
-    { label: 'Services', href: '#services' },
+    { label: 'About', href: '#about' },
     { label: 'Insights', href: '#insights' },
-    { label: 'Community', href: '#community' },
+    { label: 'Contact', href: '#contact' },
   ];
 
   const services = [
     'CFO Executive Search',
-    'Leadership Insights',
-    'Strategic Advisory',
+    'Leadership Assessment',
+    'Market Intelligence',
     'Succession Planning',
-    'Retention Strategy',
   ];
 
   const scrollToSection = (href: string) => {

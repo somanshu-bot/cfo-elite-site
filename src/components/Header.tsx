@@ -9,11 +9,9 @@ const Header = () => {
 
   const navItems = [
     { label: 'Home', href: '#home', isExternal: false },
-    { label: 'Why CFO Elite', href: '#why-cfo-elite', isExternal: false },
-    { label: 'Services', href: '#services', isExternal: false },
+    { label: 'About', href: '#about', isExternal: false },
     { label: 'Insights', href: '#insights', isExternal: false },
     { label: 'Blog', href: '/blog', isExternal: true },
-    { label: 'Community', href: '#community', isExternal: false },
     { label: 'Contact', href: '#contact', isExternal: false },
   ];
 
