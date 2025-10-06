@@ -1,5 +1,8 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Briefcase, Award } from "lucide-react";
+import timesOfIndiaLogo from "@/assets/times-of-india-logo.png";
+import economicTimesLogo from "@/assets/economic-times-logo.png";
+import storyboard18Logo from "@/assets/storyboard18-logo.png";
 
 const StatsSection = () => {
   const stats = [
@@ -20,7 +23,11 @@ const StatsSection = () => {
       number: "Featured",
       label: "Top Media Coverage",
       description: "Recognized thought leadership in CFO hiring",
-      publications: ["Economic Times", "Storyboard18", "Business Standard"]
+      publicationLogos: [
+        { src: timesOfIndiaLogo, alt: "Times of India" },
+        { src: economicTimesLogo, alt: "Economic Times" },
+        { src: storyboard18Logo, alt: "Storyboard18" }
+      ]
     }
   ];
 
@@ -38,15 +45,15 @@ const StatsSection = () => {
                 <div className="text-lg font-semibold text-foreground mb-2">{stat.label}</div>
                 <div className="text-sm text-muted-foreground mb-4">{stat.description}</div>
                 
-                {stat.publications && (
-                  <div className="flex flex-wrap gap-2 justify-center mt-4">
-                    {stat.publications.map((pub, idx) => (
-                      <span 
-                        key={idx} 
-                        className="text-xs px-3 py-1.5 bg-accent/10 text-accent-foreground rounded-full font-medium border border-accent/20"
-                      >
-                        {pub}
-                      </span>
+                {stat.publicationLogos && (
+                  <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
+                    {stat.publicationLogos.map((logo, idx) => (
+                      <img 
+                        key={idx}
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="h-8 w-auto object-contain"
+                      />
                     ))}
                   </div>
                 )}
