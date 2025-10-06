@@ -10,8 +10,10 @@ const FinalCTASection = () => {
   };
 
   return (
-    <section className="py-16 lg:py-24 bg-primary text-primary-foreground">
-      <div className="container mx-auto px-6">
+    <section className="py-16 lg:py-24 bg-gradient-to-br from-muted-dark via-primary to-primary-dark text-primary-foreground relative overflow-hidden">
+      {/* Subtle accent glow */}
+      <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 blur-3xl rounded-full"></div>
+      <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-8">
             Partner with India's most respected CFO search specialists
