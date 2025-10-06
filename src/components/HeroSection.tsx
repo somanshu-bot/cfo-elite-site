@@ -11,15 +11,15 @@ const HeroSection = () => {
   };
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-gradient-to-br from-muted-dark via-primary/40 to-muted-dark">
-      {/* Background Image with Rich Overlay */}
+    <section id="home" className="relative min-h-screen flex items-center overflow-hidden pt-20 bg-muted-dark">
+      {/* Background Image - More visible */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
         style={{ backgroundImage: `url(${heroImage})` }}
       ></div>
       
-      {/* Rich gradient overlay for luxurious depth */}
-      <div className="absolute inset-0 bg-gradient-to-br from-muted-dark/80 via-primary/60 to-muted-dark/90"></div>
+      {/* Dark grey overlay for text visibility */}
+      <div className="absolute inset-0 bg-gradient-to-br from-[hsl(210,18%,15%)] via-[hsl(210,15%,20%)] to-[hsl(210,18%,15%)] opacity-85"></div>
       
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl">
