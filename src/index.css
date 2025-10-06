@@ -8,51 +8,51 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Ishwa Consulting Aligned */
-    --background: 0 0% 100%;
-    --foreground: 210 63% 11%;
+    /* Brand Colors - Sophisticated Grey Palette */
+    --background: 0 0% 98%;
+    --foreground: 210 12% 25%;
 
-    /* Primary - Deep Navy (Ishwa Core) */
-    --primary: 210 63% 11%;
-    --primary-foreground: 0 0% 100%;
-    --primary-dark: 210 70% 8%;
+    /* Primary - Slate Grey */
+    --primary: 210 12% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-dark: 210 12% 28%;
 
-    /* Secondary - Slate Grey */
-    --secondary: 210 12% 40%;
-    --secondary-foreground: 0 0% 100%;
+    /* Secondary - Charcoal */
+    --secondary: 210 10% 45%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Accent - Gold */
     --accent: 45 59% 53%;
-    --accent-foreground: 210 63% 11%;
+    --accent-foreground: 210 12% 25%;
     --accent-muted: 45 45% 65%;
 
     /* Neutral Palette */
-    --muted: 210 20% 96%;
-    --muted-foreground: 210 12% 40%;
-    --border: 210 20% 90%;
-    --input: 210 20% 96%;
-    --ring: 210 63% 11%;
+    --muted: 210 15% 94%;
+    --muted-foreground: 210 10% 45%;
+    --border: 210 15% 88%;
+    --input: 210 15% 96%;
+    --ring: 210 12% 35%;
 
     /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 210 63% 11%;
+    --card-foreground: 210 12% 25%;
 
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 210 63% 11%;
+    --popover-foreground: 210 12% 25%;
 
     /* Destructive */
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
     /* Design System Extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(210 63% 11%), hsl(210 70% 8%));
+    --gradient-primary: linear-gradient(135deg, hsl(210 12% 35%), hsl(210 12% 28%));
     --gradient-accent: linear-gradient(135deg, hsl(45 59% 53%), hsl(45 45% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 63% 11%) 0%, hsl(210 12% 40%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 12% 35%) 0%, hsl(210 10% 45%) 100%);
     
     /* Shadows - Refined and subtle */
-    --shadow-premium: 0 10px 40px -10px hsl(210 63% 11% / 0.1);
-    --shadow-card: 0 4px 20px -4px hsl(210 63% 11% / 0.06);
+    --shadow-premium: 0 10px 40px -10px hsl(210 12% 35% / 0.12);
+    --shadow-card: 0 4px 20px -4px hsl(210 12% 35% / 0.08);
     --shadow-accent: 0 0 30px hsl(45 59% 53% / 0.15);
 
     /* Spacing & Typography */
