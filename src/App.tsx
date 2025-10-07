@@ -7,14 +7,10 @@ import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import Blog from "./pages/Blog";
-import BlogPost from "./pages/BlogPost";
 import AdminLayout from "./components/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
-import Posts from "./pages/admin/Posts";
-import PostEditor from "./pages/admin/PostEditor";
-import Categories from "./pages/admin/Categories";
 import Contacts from "./pages/admin/Contacts";
+import WebsiteContent from "./pages/admin/WebsiteContent";
 
 const queryClient = new QueryClient();
 
@@ -28,15 +24,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/blog/:slug" element={<BlogPost />} />
           
           <Route path="/admin" element={<AdminLayout />}>
             <Route index element={<Dashboard />} />
-            <Route path="posts" element={<Posts />} />
-            <Route path="posts/new" element={<PostEditor />} />
-            <Route path="posts/edit/:id" element={<PostEditor />} />
-            <Route path="categories" element={<Categories />} />
+            <Route path="content" element={<WebsiteContent />} />
             <Route path="contacts" element={<Contacts />} />
           </Route>
           
