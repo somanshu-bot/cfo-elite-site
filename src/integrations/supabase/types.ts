@@ -14,72 +14,6 @@ export type Database = {
   }
   public: {
     Tables: {
-      blog_posts: {
-        Row: {
-          author_id: string
-          content: string
-          created_at: string | null
-          excerpt: string | null
-          featured_image: string | null
-          id: string
-          published_at: string | null
-          slug: string
-          status: string | null
-          title: string
-          updated_at: string | null
-        }
-        Insert: {
-          author_id: string
-          content: string
-          created_at?: string | null
-          excerpt?: string | null
-          featured_image?: string | null
-          id?: string
-          published_at?: string | null
-          slug: string
-          status?: string | null
-          title: string
-          updated_at?: string | null
-        }
-        Update: {
-          author_id?: string
-          content?: string
-          created_at?: string | null
-          excerpt?: string | null
-          featured_image?: string | null
-          id?: string
-          published_at?: string | null
-          slug?: string
-          status?: string | null
-          title?: string
-          updated_at?: string | null
-        }
-        Relationships: []
-      }
-      categories: {
-        Row: {
-          created_at: string | null
-          description: string | null
-          id: string
-          name: string
-          slug: string
-        }
-        Insert: {
-          created_at?: string | null
-          description?: string | null
-          id?: string
-          name: string
-          slug: string
-        }
-        Update: {
-          created_at?: string | null
-          description?: string | null
-          id?: string
-          name?: string
-          slug?: string
-        }
-        Relationships: []
-      }
       contact_submissions: {
         Row: {
           company: string | null
@@ -109,36 +43,6 @@ export type Database = {
           status?: string | null
         }
         Relationships: []
-      }
-      post_categories: {
-        Row: {
-          category_id: string
-          post_id: string
-        }
-        Insert: {
-          category_id: string
-          post_id: string
-        }
-        Update: {
-          category_id?: string
-          post_id?: string
-        }
-        Relationships: [
-          {
-            foreignKeyName: "post_categories_category_id_fkey"
-            columns: ["category_id"]
-            isOneToOne: false
-            referencedRelation: "categories"
-            referencedColumns: ["id"]
-          },
-          {
-            foreignKeyName: "post_categories_post_id_fkey"
-            columns: ["post_id"]
-            isOneToOne: false
-            referencedRelation: "blog_posts"
-            referencedColumns: ["id"]
-          },
-        ]
       }
       profiles: {
         Row: {

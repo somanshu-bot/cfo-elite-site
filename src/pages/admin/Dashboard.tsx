@@ -1,13 +1,12 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, FolderOpen, Mail, Users } from "lucide-react";
+import { Mail, FileEdit } from "lucide-react";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
-    posts: 0,
-    categories: 0,
     contacts: 0,
+    contentSections: 0,
   });
 
   useEffect(() => {
@@ -15,23 +14,20 @@ const Dashboard = () => {
   }, []);
 
   const loadStats = async () => {
-    const [postsData, categoriesData, contactsData] = await Promise.all([
-      supabase.from("blog_posts").select("id", { count: "exact", head: true }),
-      supabase.from("categories").select("id", { count: "exact", head: true }),
+    const [contactsData, contentData] = await Promise.all([
       supabase.from("contact_submissions").select("id", { count: "exact", head: true }),
+      supabase.from("website_content").select("id", { count: "exact", head: true }),
     ]);
 
     setStats({
-      posts: postsData.count || 0,
-      categories: categoriesData.count || 0,
       contacts: contactsData.count || 0,
+      contentSections: contentData.count || 0,
     });
   };
 
   const statCards = [
-    { title: "Blog Posts", value: stats.posts, icon: FileText, color: "text-blue-600" },
-    { title: "Categories", value: stats.categories, icon: FolderOpen, color: "text-green-600" },
     { title: "Contact Forms", value: stats.contacts, icon: Mail, color: "text-orange-600" },
+    { title: "Content Sections", value: stats.contentSections, icon: FileEdit, color: "text-blue-600" },
   ];
 
   return (
@@ -41,7 +37,7 @@ const Dashboard = () => {
         <p className="text-muted-foreground">Welcome to your admin panel</p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-3">
+      <div className="grid gap-6 md:grid-cols-2">
         {statCards.map((stat) => {
           const Icon = stat.icon;
           return (
