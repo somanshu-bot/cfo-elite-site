@@ -3,7 +3,7 @@ import { useNavigate, Outlet, Link, useLocation } from "react-router-dom";
 import { supabase } from "@/integrations/supabase/client";
 import { Button } from "@/components/ui/button";
 import { useToast } from "@/hooks/use-toast";
-import { LayoutDashboard, FileText, FolderOpen, Mail, LogOut, FileCode } from "lucide-react";
+import { LayoutDashboard, Mail, LogOut, FileCode } from "lucide-react";
 
 const AdminLayout = () => {
   const navigate = useNavigate();
@@ -43,9 +43,7 @@ const AdminLayout = () => {
 
   const navItems = [
     { icon: LayoutDashboard, label: "Dashboard", path: "/admin" },
-    { icon: FileCode, label: "Website Content", path: "/admin/website-content" },
-    { icon: FileText, label: "Blog Posts", path: "/admin/posts" },
-    { icon: FolderOpen, label: "Categories", path: "/admin/categories" },
+    { icon: FileCode, label: "Website Content", path: "/admin/content" },
     { icon: Mail, label: "Contact Forms", path: "/admin/contacts" },
   ];
 
