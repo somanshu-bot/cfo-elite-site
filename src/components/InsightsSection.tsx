@@ -1,21 +1,21 @@
 import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { ArrowRight, FileText } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { FileText } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
 
 const InsightsSection = () => {
   const { toast } = useToast();
-  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [showEmailDialog, setShowEmailDialog] = useState(false);
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleReportRequest = async (e: React.FormEvent) => {
+  const handleRequestReport = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
@@ -30,12 +30,12 @@ const InsightsSection = () => {
       if (error) throw error;
 
       toast({
-        title: "Request Submitted",
-        description: "The report will be sent to your email shortly.",
+        title: "Request Received",
+        description: "The report will be sent to your email.",
       });
 
       setEmail("");
-      setIsDialogOpen(false);
+      setShowEmailDialog(false);
     } catch (error) {
       toast({
         title: "Error",
@@ -62,8 +62,8 @@ const InsightsSection = () => {
 
           <div className="flex justify-center mb-12">
             <Card 
-              className="card-premium cursor-pointer hover:scale-[1.02] transition-all duration-300 max-w-2xl w-full"
-              onClick={() => setIsDialogOpen(true)}
+              className="card-premium cursor-pointer hover:scale-[1.02] transition-all duration-300 max-w-md w-full"
+              onClick={() => setShowEmailDialog(true)}
             >
               <CardContent className="p-8">
                 <div className="flex items-center justify-between mb-4">
@@ -82,15 +82,15 @@ const InsightsSection = () => {
             </Card>
           </div>
 
-          <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
+          <Dialog open={showEmailDialog} onOpenChange={setShowEmailDialog}>
             <DialogContent>
               <DialogHeader>
                 <DialogTitle>Request CFO Retention Study</DialogTitle>
                 <DialogDescription>
-                  Enter your email address and we'll send the report to you shortly.
+                  Enter your email address and we'll send the report to you.
                 </DialogDescription>
               </DialogHeader>
-              <form onSubmit={handleReportRequest} className="space-y-4">
+              <form onSubmit={handleRequestReport} className="space-y-4">
                 <div className="space-y-2">
                   <Label htmlFor="email">Email Address</Label>
                   <Input

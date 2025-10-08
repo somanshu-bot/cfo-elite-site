@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { Mail, Phone, MapPin, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Linkedin, Twitter } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -108,12 +108,15 @@ const Footer = () => {
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <div className="text-primary-foreground/90 text-sm space-y-1">
-                  <div>Delhi NCR</div>
-                  <div>Bangalore</div>
-                  <div>Hyderabad</div>
-                  <div>Chennai</div>
-                  <div>Dubai</div>
+                <div>
+                  <div className="text-primary-foreground/90 text-sm space-y-1">
+                    <div>Delhi NCR</div>
+                    <div>Bangalore</div>
+                    <div>Hyderabad</div>
+                    <div>Chennai</div>
+                    <div>Dubai</div>
+                  </div>
+                  <div className="text-primary-foreground/70 text-xs mt-2">Meet us at your convenience</div>
                 </div>
               </div>
             </div>

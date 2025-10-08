@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { supabase } from "@/integrations/supabase/client";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
 
 const ContactSection = () => {
   const { toast } = useToast();

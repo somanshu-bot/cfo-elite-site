@@ -9,8 +9,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { format } from "date-fns";
 
 interface ReportRequest {
   id: string;
@@ -40,8 +41,8 @@ const ReportRequests = () => {
       setRequests(data || []);
     } catch (error) {
       toast({
-        title: "Error loading requests",
-        description: "Could not load report requests",
+        title: "Error",
+        description: "Failed to load report requests",
         variant: "destructive",
       });
     } finally {
@@ -49,41 +50,39 @@ const ReportRequests = () => {
     }
   };
 
-  const markAsSent = async (id: string) => {
+  const updateStatus = async (id: string, newStatus: string) => {
     try {
       const { error } = await supabase
         .from('report_requests')
-        .update({ status: 'sent' })
+        .update({ status: newStatus })
         .eq('id', id);
 
       if (error) throw error;
 
       toast({
-        title: "Status updated",
-        description: "Request marked as sent",
+        title: "Status Updated",
+        description: "Request status has been updated",
       });
 
       loadRequests();
     } catch (error) {
       toast({
         title: "Error",
-        description: "Could not update status",
+        description: "Failed to update status",
         variant: "destructive",
       });
     }
   };
 
   if (loading) {
-    return <div className="p-8">Loading...</div>;
+    return <div>Loading...</div>;
   }
 
   return (
-    <div className="space-y-6">
-      <div>
+    <div>
+      <div className="mb-8">
         <h1 className="text-3xl font-bold">Report Requests</h1>
-        <p className="text-muted-foreground">
-          Manage report requests from users
-        </p>
+        <p className="text-muted-foreground">Manage CFO Retention Study requests</p>
       </div>
 
       <div className="rounded-md border">
@@ -100,7 +99,7 @@ const ReportRequests = () => {
           <TableBody>
             {requests.length === 0 ? (
               <TableRow>
-                <TableCell colSpan={5} className="text-center text-muted-foreground">
+                <TableCell colSpan={5} className="text-center">
                   No report requests yet
                 </TableCell>
               </TableRow>
@@ -110,19 +109,20 @@ const ReportRequests = () => {
                   <TableCell className="font-medium">{request.email}</TableCell>
                   <TableCell>{request.report_name}</TableCell>
                   <TableCell>
-                    <Badge variant={request.status === 'sent' ? 'default' : 'secondary'}>
+                    <Badge
+                      variant={request.status === 'sent' ? 'default' : 'secondary'}
+                    >
                       {request.status}
                     </Badge>
                   </TableCell>
                   <TableCell>
-                    {new Date(request.created_at).toLocaleDateString()}
+                    {format(new Date(request.created_at), 'MMM dd, yyyy')}
                   </TableCell>
                   <TableCell>
                     {request.status === 'pending' && (
                       <Button
-                        variant="outline"
                         size="sm"
-                        onClick={() => markAsSent(request.id)}
+                        onClick={() => updateStatus(request.id, 'sent')}
                       >
                         Mark as Sent
                       </Button>
