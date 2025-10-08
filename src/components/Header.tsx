@@ -11,7 +11,6 @@ const Header = () => {
     { label: 'Home', href: '#home', isExternal: false },
     { label: 'About', href: '#about', isExternal: false },
     { label: 'Insights', href: '#insights', isExternal: false },
-    { label: 'Blog', href: '/blog', isExternal: true },
     { label: 'Contact', href: '#contact', isExternal: false },
   ];
 
