@@ -24,9 +24,9 @@ const StatsSection = () => {
       label: "Top Media Coverage",
       description: "Recognized thought leadership in CFO hiring",
       publicationLogos: [
-        { src: timesOfIndiaLogo, alt: "Times of India" },
-        { src: economicTimesLogo, alt: "Economic Times" },
-        { src: storyboard18Logo, alt: "Storyboard18" }
+        { src: timesOfIndiaLogo, alt: "Times of India", url: "https://timesofindia.indiatimes.com/business/india-business/cfo-churn-most-finance-bosses-exit-in-2-years/articleshow/123128576.cms" },
+        { src: economicTimesLogo, alt: "Economic Times", url: "https://economictimes.indiatimes.com/jobs/c-suite/cfos-are-quitting-indian-firms-before-finishing-2-years/articleshow/123140494.cms" },
+        { src: storyboard18Logo, alt: "Storyboard18", url: "https://www.storyboard18.com/how-it-works/wave-of-cfo-exits-hits-india-inc-over-100-departures-in-h1-fy2026-81897.htm" }
       ]
     }
   ];
@@ -48,12 +48,19 @@ const StatsSection = () => {
                 {stat.publicationLogos && (
                   <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
                     {stat.publicationLogos.map((logo, idx) => (
-                      <img 
+                      <a 
                         key={idx}
-                        src={logo.src}
-                        alt={logo.alt}
-                        className={`w-auto object-contain ${idx === 0 ? 'h-14' : idx === 2 ? 'h-12' : 'h-10'}`}
-                      />
+                        href={logo.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="transition-opacity hover:opacity-70"
+                      >
+                        <img 
+                          src={logo.src}
+                          alt={logo.alt}
+                          className={`w-auto object-contain ${idx === 0 ? 'h-14' : idx === 2 ? 'h-12' : 'h-10'}`}
+                        />
+                      </a>
                     ))}
                   </div>
                 )}
