@@ -147,34 +147,18 @@ const ContactSection = () => {
             <div className="space-y-8">
               <div className="flex items-start space-x-4">
                 <div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground mb-1">Email</div>
-                  <div className="text-muted-foreground">hello@cfoelite.in</div>
-                  <div className="text-sm text-muted-foreground">Response within 24 hours</div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-primary" />
-                </div>
-                <div>
-                  <div className="font-semibold text-foreground mb-1">Phone</div>
-                  <div className="text-muted-foreground">+91 98765 43210</div>
-                  <div className="text-sm text-muted-foreground">Mon-Fri, 9 AM - 6 PM IST</div>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="w-12 h-12 rounded-lg bg-primary/5 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-primary" />
                 </div>
                 <div>
-                  <div className="font-semibold text-foreground mb-1">Office</div>
-                  <div className="text-muted-foreground">Mumbai | Delhi | Bangalore</div>
-                  <div className="text-sm text-muted-foreground">Meet us at your convenience</div>
+                  <div className="font-semibold text-foreground mb-1">Our Offices</div>
+                  <div className="text-muted-foreground space-y-1">
+                    <div>Delhi NCR</div>
+                    <div>Bangalore</div>
+                    <div>Hyderabad</div>
+                    <div>Chennai</div>
+                    <div>Dubai</div>
+                  </div>
+                  <div className="text-sm text-muted-foreground mt-2">Meet us at your convenience</div>
                 </div>
               </div>
             </div>

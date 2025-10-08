@@ -74,6 +74,33 @@ export type Database = {
         }
         Relationships: []
       }
+      report_requests: {
+        Row: {
+          created_at: string | null
+          email: string
+          id: string
+          report_name: string
+          status: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          email: string
+          id?: string
+          report_name: string
+          status?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          email?: string
+          id?: string
+          report_name?: string
+          status?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
       website_content: {
         Row: {
           content: Json

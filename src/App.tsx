@@ -11,6 +11,7 @@ import AdminLayout from "./components/admin/AdminLayout";
 import Dashboard from "./pages/admin/Dashboard";
 import Contacts from "./pages/admin/Contacts";
 import WebsiteContent from "./pages/admin/WebsiteContent";
+import ReportRequests from "./pages/admin/ReportRequests";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
             <Route index element={<Dashboard />} />
             <Route path="content" element={<WebsiteContent />} />
             <Route path="contacts" element={<Contacts />} />
+            <Route path="reports" element={<ReportRequests />} />
           </Route>
           
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}

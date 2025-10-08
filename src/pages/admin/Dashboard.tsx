@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import { supabase } from "@/integrations/supabase/client";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, FileEdit } from "lucide-react";
+import { Mail, FileEdit, FileText } from "lucide-react";
 
 const Dashboard = () => {
   const [stats, setStats] = useState({
     contacts: 0,
     contentSections: 0,
+    reportRequests: 0,
   });
 
   useEffect(() => {
@@ -14,20 +15,23 @@ const Dashboard = () => {
   }, []);
 
   const loadStats = async () => {
-    const [contactsData, contentData] = await Promise.all([
+    const [contactsData, contentData, reportsData] = await Promise.all([
       supabase.from("contact_submissions").select("id", { count: "exact", head: true }),
       supabase.from("website_content").select("id", { count: "exact", head: true }),
+      supabase.from("report_requests").select("id", { count: "exact", head: true }),
     ]);
 
     setStats({
       contacts: contactsData.count || 0,
       contentSections: contentData.count || 0,
+      reportRequests: reportsData.count || 0,
     });
   };
 
   const statCards = [
     { title: "Contact Forms", value: stats.contacts, icon: Mail, color: "text-orange-600" },
     { title: "Content Sections", value: stats.contentSections, icon: FileEdit, color: "text-blue-600" },
+    { title: "Report Requests", value: stats.reportRequests, icon: FileText, color: "text-green-600" },
   ];
 
   return (
@@ -37,7 +41,7 @@ const Dashboard = () => {
         <p className="text-muted-foreground">Welcome to your admin panel</p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-3">
         {statCards.map((stat) => {
           const Icon = stat.icon;
           return (

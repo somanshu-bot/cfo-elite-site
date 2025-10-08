@@ -104,29 +104,16 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-accent mb-6">Contact Us</h4>
+            <h4 className="font-semibold text-accent mb-6">Our Offices</h4>
             <div className="space-y-4">
               <div className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <div>
-                  <div className="text-primary-foreground/90 text-sm">hello@cfoelite.in</div>
-                  <div className="text-primary-foreground/70 text-xs">Response within 24 hours</div>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
-                <Phone className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <div>
-                  <div className="text-primary-foreground/90 text-sm">+91 98765 43210</div>
-                  <div className="text-primary-foreground/70 text-xs">Mon-Fri, 9 AM - 6 PM IST</div>
-                </div>
-              </div>
-              
-              <div className="flex items-start space-x-3">
                 <MapPin className="w-4 h-4 text-accent mt-0.5 flex-shrink-0" />
-                <div>
-                  <div className="text-primary-foreground/90 text-sm">Mumbai | Delhi | Bangalore</div>
-                  <div className="text-primary-foreground/70 text-xs">Meet us at your convenience</div>
+                <div className="text-primary-foreground/90 text-sm space-y-1">
+                  <div>Delhi NCR</div>
+                  <div>Bangalore</div>
+                  <div>Hyderabad</div>
+                  <div>Chennai</div>
+                  <div>Dubai</div>
                 </div>
               </div>
             </div>
