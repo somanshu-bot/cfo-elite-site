@@ -8,23 +8,23 @@
 
 @layer base {
   :root {
-    /* Brand Colors - Luxurious Boardroom Grey Palette */
+    /* Brand Colors - CFO Elite by Ishwa */
     --background: 0 0% 100%;
     --foreground: 210 15% 20%;
 
-    /* Primary - Rich Charcoal Grey */
-    --primary: 210 15% 25%;
+    /* Primary - Ishwa Brand Red */
+    --primary: 358 64% 45%;
     --primary-foreground: 0 0% 98%;
-    --primary-dark: 210 18% 18%;
+    --primary-dark: 358 64% 35%;
 
-    /* Secondary - Warm Slate */
-    --secondary: 210 10% 50%;
+    /* Secondary - CFO Elite Grey */
+    --secondary: 210 15% 25%;
     --secondary-foreground: 0 0% 98%;
 
-    /* Accent - Luxe Gold */
-    --accent: 38 85% 55%;
-    --accent-foreground: 210 15% 20%;
-    --accent-muted: 38 70% 65%;
+    /* Accent - Ishwa Red Light */
+    --accent: 358 64% 55%;
+    --accent-foreground: 0 0% 98%;
+    --accent-muted: 358 50% 65%;
 
     /* Neutral Palette - Rich Greys */
     --muted: 210 20% 92%;
@@ -32,7 +32,7 @@
     --muted-dark: 210 18% 15%;
     --border: 210 15% 85%;
     --input: 210 18% 95%;
-    --ring: 38 85% 55%;
+    --ring: 358 64% 45%;
 
     /* Card System */
     --card: 0 0% 100%;
@@ -46,16 +46,16 @@
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    /* Design System Extensions */
-    --gradient-primary: linear-gradient(135deg, hsl(210 15% 25%), hsl(210 18% 18%));
-    --gradient-accent: linear-gradient(135deg, hsl(38 85% 55%), hsl(38 70% 65%));
-    --gradient-hero: linear-gradient(135deg, hsl(210 18% 15%) 0%, hsl(210 15% 25%) 50%, hsl(210 10% 50%) 100%);
+    /* Design System Extensions - Ishwa x CFO Elite */
+    --gradient-primary: linear-gradient(135deg, hsl(358 64% 45%), hsl(358 64% 55%));
+    --gradient-accent: linear-gradient(135deg, hsl(358 64% 45%), hsl(210 15% 25%));
+    --gradient-hero: linear-gradient(135deg, hsl(210 18% 15%) 0%, hsl(358 64% 45%) 50%, hsl(358 64% 55%) 100%);
     --gradient-grey-band: linear-gradient(180deg, hsl(210 20% 92%) 0%, hsl(210 18% 88%) 100%);
     
-    /* Shadows - Sophisticated depth */
-    --shadow-premium: 0 20px 50px -15px hsl(210 15% 25% / 0.15);
+    /* Shadows - Ishwa red glow with sophisticated depth */
+    --shadow-premium: 0 20px 50px -15px hsl(358 64% 45% / 0.2);
     --shadow-card: 0 8px 30px -8px hsl(210 15% 25% / 0.1);
-    --shadow-accent: 0 0 40px hsl(38 85% 55% / 0.2);
+    --shadow-accent: 0 0 40px hsl(358 64% 45% / 0.25);
     --shadow-inset: inset 0 2px 4px hsl(210 15% 25% / 0.05);
 
     /* Spacing & Typography */
@@ -160,11 +160,11 @@
 
   /* Text Gradients */
   .text-gradient-primary {
-    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
   }
 
   .text-gradient-accent {
-    @apply bg-gradient-to-r from-accent to-rust bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-accent to-primary-dark bg-clip-text text-transparent;
   }
 }
 

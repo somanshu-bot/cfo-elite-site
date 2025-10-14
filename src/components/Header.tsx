@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import ishwaLogo from "@/assets/ishwa-logo-text.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,9 +32,10 @@ const Header = () => {
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center gap-3">
             <div className="text-2xl font-bold text-gradient-primary">CFO Elite</div>
-            <div className="text-sm text-muted-foreground">by Ishwa</div>
+            <div className="text-sm text-muted-foreground">by</div>
+            <img src={ishwaLogo} alt="Ishwa" className="h-5" />
           </div>
 
           {/* Desktop Navigation */}
