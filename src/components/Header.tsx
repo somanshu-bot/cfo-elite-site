@@ -35,7 +35,9 @@ const Header = () => {
           <div className="flex items-center gap-3">
             <div className="text-2xl font-bold text-gradient-primary">CFO Elite</div>
             <div className="text-sm text-muted-foreground">by</div>
-            <img src={ishwaLogo} alt="Ishwa" className="h-5" />
+            <a href="https://www.ishwaconsulting.com" target="_blank" rel="noopener noreferrer" className="transition-opacity hover:opacity-70">
+              <img src={ishwaLogo} alt="Ishwa" className="h-5" />
+            </a>
           </div>
 
           {/* Desktop Navigation */}

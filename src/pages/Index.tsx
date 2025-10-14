@@ -4,6 +4,7 @@ import StatsSection from "@/components/StatsSection";
 import DifferentiatorsSection from "@/components/DifferentiatorsSection";
 import InsightsSection from "@/components/InsightsSection";
 import AboutSection from "@/components/AboutSection";
+import CaseStudiesSection from "@/components/CaseStudiesSection";
 import FinalCTASection from "@/components/FinalCTASection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -18,6 +19,7 @@ const Index = () => {
         <DifferentiatorsSection />
         <InsightsSection />
         <AboutSection />
+        <CaseStudiesSection />
         <FinalCTASection />
         <ContactSection />
       </main>
