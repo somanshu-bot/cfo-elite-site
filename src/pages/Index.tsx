@@ -1,7 +1,9 @@
 import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
+import WhenToCallSection from "@/components/WhenToCallSection";
 import StatsSection from "@/components/StatsSection";
 import DifferentiatorsSection from "@/components/DifferentiatorsSection";
+import ApproachSection from "@/components/ApproachSection";
 import InsightsSection from "@/components/InsightsSection";
 import AboutSection from "@/components/AboutSection";
 import CaseStudiesSection from "@/components/CaseStudiesSection";
@@ -15,8 +17,10 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <WhenToCallSection />
         <StatsSection />
         <DifferentiatorsSection />
+        <ApproachSection />
         <InsightsSection />
         <AboutSection />
         <CaseStudiesSection />

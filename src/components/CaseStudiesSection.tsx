@@ -24,18 +24,18 @@ const caseStudies: CaseStudy[] = [
     id: 1,
     icon: <TrendingUp className="w-8 h-8 text-primary" />,
     company: "Global Tech Solutions",
-    industry: "Technology & SaaS",
-    challenge: "Rapid growth required a CFO with international expansion experience",
-    summary: "Successfully placed a CFO with 15+ years of experience scaling SaaS companies from Series B to IPO, resulting in 3x revenue growth in 18 months.",
+    industry: "SaaS",
+    challenge: "IPO-track CFO after rapid ARR growth",
+    summary: "Close-rate +19%, DSO −14 days, monthly flash in 30 days.",
     fullStory: {
-      background: "A fast-growing SaaS company was preparing for international expansion and needed a CFO who could navigate multi-currency operations, international tax implications, and investor relations for their Series C round.",
-      approach: "We conducted a comprehensive search across our network of finance leaders with proven track records in SaaS scaling. Our assessment focused on candidates who had successfully led companies through hypergrowth phases and international expansion.",
-      outcome: "The appointed CFO successfully led a $50M Series C funding round, established operations in 3 new countries, and implemented financial systems that supported 200% YoY growth. The company achieved profitability 6 months ahead of projections.",
+      background: "A fast-growing SaaS company needed a CFO capable of taking them through IPO readiness while maintaining operational excellence during hypergrowth.",
+      approach: "We focused on candidates with proven track records in IPO preparation, cash management discipline, and building scalable finance operations.",
+      outcome: "The appointed CFO implemented robust financial controls, accelerated the close process, and established investor-grade reporting systems.",
       metrics: [
-        "Series C funding closed within 4 months",
-        "3x revenue growth in 18 months",
-        "Successful expansion into 3 international markets",
-        "Profitability achieved 6 months early"
+        "Close-rate improved by 19%",
+        "Days Sales Outstanding reduced by 14 days",
+        "Monthly flash reporting implemented in 30 days",
+        "IPO-ready financial infrastructure established"
       ]
     }
   },
@@ -43,18 +43,18 @@ const caseStudies: CaseStudy[] = [
     id: 2,
     icon: <Users className="w-8 h-8 text-primary" />,
     company: "Heritage Manufacturing Ltd.",
-    industry: "Manufacturing & Industrial",
-    challenge: "Legacy company needed digital transformation leadership from finance",
-    summary: "Identified and onboarded a transformational CFO who modernized financial operations, implementing ERP systems and data analytics that improved margins by 15%.",
+    industry: "Industrial",
+    challenge: "Controls and cost discipline",
+    summary: "Opex −3.9%, vendor terms improved, SAP controls tightened.",
     fullStory: {
-      background: "A 50-year-old manufacturing company was facing declining margins and operational inefficiencies. They needed a CFO who could bridge traditional manufacturing finance with modern digital capabilities.",
-      approach: "We focused on candidates who had successfully led digital transformation initiatives in traditional industries. Our selection process emphasized change management skills alongside technical finance expertise.",
-      outcome: "The new CFO implemented a cloud-based ERP system, established real-time reporting dashboards, and restructured the finance team to focus on strategic analysis. These changes led to improved decision-making and significant cost savings.",
+      background: "A 50-year-old manufacturing company needed to modernize financial controls and implement cost discipline without disrupting operations.",
+      approach: "We searched for candidates with deep experience in manufacturing finance, ERP implementations, and change management in traditional industries.",
+      outcome: "The new CFO successfully tightened controls, negotiated better vendor terms, and implemented SAP-based financial discipline across operations.",
       metrics: [
-        "15% improvement in operating margins",
-        "40% reduction in month-end close time",
-        "Real-time financial dashboards implemented",
-        "€8M in operational cost savings identified"
+        "Operating expenses reduced by 3.9%",
+        "Vendor payment terms improved by 15 days",
+        "SAP financial controls tightened and standardized",
+        "Monthly variance analysis implemented"
       ]
     }
   },
@@ -62,18 +62,18 @@ const caseStudies: CaseStudy[] = [
     id: 3,
     icon: <Target className="w-8 h-8 text-primary" />,
     company: "Retail Innovation Group",
-    industry: "Retail & E-commerce",
-    challenge: "Post-merger integration required a CFO with M&A and integration expertise",
-    summary: "Placed a CFO who successfully integrated 3 acquisitions, harmonized financial systems across 12 countries, and delivered synergies 20% above target.",
+    industry: "D2C/Omni",
+    challenge: "Unit-economics recovery; PE reporting",
+    summary: "GM% +3.2 pts, markdown loss −18%, 4-1-4 cash rhythm introduced.",
     fullStory: {
-      background: "Following an aggressive acquisition strategy, this retail group needed a CFO capable of integrating multiple businesses while maintaining operational excellence and preparing for a potential exit.",
-      approach: "Our search prioritized candidates with extensive M&A experience, particularly those who had led successful post-merger integrations in retail or consumer sectors. We assessed for both technical integration skills and stakeholder management capabilities.",
-      outcome: "The appointed CFO successfully integrated three acquisitions, standardized financial processes across all entities, and identified significant synergies. Within two years, the company achieved a successful exit at a valuation 30% above initial projections.",
+      background: "A retail group backed by PE needed to improve unit economics and implement institutional-grade financial reporting and cash management.",
+      approach: "Our search prioritized CFOs with retail experience, PE reporting expertise, and a track record of turning around unit economics.",
+      outcome: "The CFO improved gross margins, reduced inventory losses, and established disciplined cash management practices aligned with PE expectations.",
       metrics: [
-        "3 acquisitions successfully integrated",
-        "Synergies achieved 20% above target",
-        "Standardized financial operations across 12 countries",
-        "Successful exit at 30% premium valuation"
+        "Gross margin improved by 3.2 percentage points",
+        "Markdown losses reduced by 18%",
+        "4-1-4 cash rhythm and reporting introduced",
+        "PE-grade financial reporting implemented"
       ]
     }
   }

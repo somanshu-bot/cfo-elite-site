@@ -60,9 +60,9 @@ const InsightsSection = () => {
             </p>
           </div>
 
-          <div className="flex justify-center mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card 
-              className="card-premium cursor-pointer hover:scale-[1.02] transition-all duration-300 max-w-md w-full"
+              className="card-premium cursor-pointer hover:scale-[1.02] transition-all duration-300"
               onClick={() => setShowEmailDialog(true)}
             >
               <CardContent className="p-8">
@@ -73,11 +73,34 @@ const InsightsSection = () => {
                   </Badge>
                 </div>
                 <h3 className="text-xl font-heading font-semibold mb-3 text-foreground">
-                  CFO Retention Study
+                  CFO Retention Study (2025)
                 </h3>
-                <p className="text-muted-foreground text-sm">
-                  Analysis of CFO tenure patterns across Indian markets
+                <p className="text-muted-foreground text-sm mb-4">
+                  Why CFOs leave and how to keep them.
                 </p>
+                <button className="text-primary text-sm font-semibold hover:underline">
+                  Download →
+                </button>
+              </CardContent>
+            </Card>
+
+            <Card className="card-premium">
+              <CardContent className="p-8">
+                <div className="flex items-center justify-between mb-4">
+                  <FileText className="w-10 h-10 text-accent" />
+                  <Badge variant="outline" className="text-xs">
+                    Framework
+                  </Badge>
+                </div>
+                <h3 className="text-xl font-heading font-semibold mb-3 text-foreground">
+                  Assessment Framework
+                </h3>
+                <p className="text-muted-foreground text-sm mb-4">
+                  Scoring across leadership, cash, controls, governance.
+                </p>
+                <button className="text-primary text-sm font-semibold hover:underline">
+                  View →
+                </button>
               </CardContent>
             </Card>
           </div>

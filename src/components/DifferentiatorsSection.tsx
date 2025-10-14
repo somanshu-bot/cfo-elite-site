@@ -5,18 +5,18 @@ const DifferentiatorsSection = () => {
   const differentiators = [
     {
       icon: Target,
-      title: "Deep Evaluation Beyond Finance Skills",
-      description: "We assess leadership capability, business acumen, and cultural alignment — not just technical expertise."
+      title: "Business-first evaluation",
+      description: "We assess leadership, cash discipline, governance, and culture fit — not just resumes."
     },
     {
       icon: Database,
-      title: "Proven Search Methodology",
-      description: "Backed by proprietary data on CFO compensation, retention patterns, and succession planning."
+      title: "Disciplined search method",
+      description: "Research-led longlists, structured interviews, and reference triangulation you can trust."
     },
     {
       icon: Network,
-      title: "India-Wide CFO Network",
-      description: "Strong promoter trust and exclusive access to top-tier finance leaders across all sectors."
+      title: "India-wide CFO network",
+      description: "Fast access to proven operators across PE-backed, listed, and high-growth firms."
     }
   ];
 
@@ -25,7 +25,7 @@ const DifferentiatorsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-2xl mx-auto text-center mb-12">
           <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-foreground">
-            What Sets Us Apart
+            What sets us apart
           </h2>
         </div>
 

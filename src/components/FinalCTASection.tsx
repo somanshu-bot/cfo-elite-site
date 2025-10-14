@@ -15,25 +15,28 @@ const FinalCTASection = () => {
       <div className="absolute top-0 right-0 w-96 h-96 bg-accent/10 blur-3xl rounded-full"></div>
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-8 text-white">
-            Partner with India's most respected CFO search specialists
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-4 text-white">
+            Ready to discuss your CFO need?
           </h2>
+          <p className="text-xl text-white/90 mb-8">
+            Get a quick view of market options and timelines for your context.
+          </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               onClick={scrollToContact}
               className="bg-accent text-accent-foreground hover:bg-accent/90 text-lg px-8 py-6"
             >
-              Talk to Our Team
+              Book a 20-min consult
               <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary text-lg px-8 py-6"
-              onClick={() => window.open('https://ishwaconsulting.com', '_blank')}
+              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-secondary text-lg px-8 py-6"
+              onClick={scrollToContact}
             >
-              Explore Ishwa Consulting
+              Share your mandate
             </Button>
           </div>
         </div>

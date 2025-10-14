@@ -12,8 +12,10 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    organization: '',
-    message: ''
+    company: '',
+    phone: '',
+    role: '',
+    context: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -35,8 +37,8 @@ const ContactSection = () => {
         .insert([{
           name: formData.name,
           email: formData.email,
-          company: formData.organization,
-          message: formData.message
+          company: formData.company,
+          message: `Role: ${formData.role}\nPhone: ${formData.phone || 'Not provided'}\n\nContext:\n${formData.context}`
         }]);
 
       if (error) throw error;
@@ -46,7 +48,7 @@ const ContactSection = () => {
         description: "We'll be in touch shortly.",
       });
 
-      setFormData({ name: '', email: '', organization: '', message: '' });
+      setFormData({ name: '', email: '', company: '', phone: '', role: '', context: '' });
     } catch (error) {
       toast({
         title: "Error",
@@ -64,10 +66,10 @@ const ContactSection = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-foreground">
-              Let's Begin the Conversation
+              Start the conversation
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Whether you're building your finance leadership team or seeking your next strategic CFO, our team would be glad to connect.
+              Tell us about your CFO need and we'll get back to you within one business day.
             </p>
           </div>
 
@@ -86,10 +88,10 @@ const ContactSection = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="organization">Organization</Label>
+                <Label htmlFor="company">Company</Label>
                 <Input
-                  id="organization"
-                  value={formData.organization}
+                  id="company"
+                  value={formData.company}
                   onChange={handleInputChange}
                   required
                   className="bg-background"
@@ -109,14 +111,38 @@ const ContactSection = () => {
               </div>
 
               <div className="space-y-2">
-                <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  value={formData.message}
+                <Label htmlFor="phone">Phone (optional)</Label>
+                <Input
+                  id="phone"
+                  type="tel"
+                  value={formData.phone}
+                  onChange={handleInputChange}
+                  className="bg-background"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="role">Role you're hiring for</Label>
+                <Input
+                  id="role"
+                  value={formData.role}
                   onChange={handleInputChange}
                   required
-                  rows={5}
                   className="bg-background"
+                  placeholder="e.g., CFO, Finance Director"
+                />
+              </div>
+
+              <div className="space-y-2">
+                <Label htmlFor="context">Context (2–3 lines)</Label>
+                <Textarea
+                  id="context"
+                  value={formData.context}
+                  onChange={handleInputChange}
+                  required
+                  rows={3}
+                  className="bg-background"
+                  placeholder="Brief context about your company and the CFO need"
                 />
               </div>
 
@@ -126,21 +152,13 @@ const ContactSection = () => {
                 disabled={isSubmitting}
                 className="w-full bg-primary text-primary-foreground hover:bg-primary-dark"
               >
-                {isSubmitting ? 'Submitting...' : 'Submit'}
+                {isSubmitting ? 'Submitting...' : 'Request a 20-min consult'}
               </Button>
 
-              <p className="text-sm text-center text-muted-foreground pt-4">
-                Backed by Ishwa Consulting — India's trusted leadership search firm.
-                <br />
-                <a 
-                  href="https://ishwaconsulting.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="text-accent hover:underline"
-                >
-                  Visit Ishwa Consulting →
-                </a>
+              <p className="text-sm text-center text-muted-foreground">
+                We reply within one business day. Confidential, no obligation.
               </p>
+
             </form>
 
             {/* Contact Information */}

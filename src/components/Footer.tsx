@@ -143,6 +143,13 @@ const Footer = () => {
             </div>
           </div>
         </div>
+
+        {/* Privacy Note */}
+        <div className="mt-6 text-center">
+          <p className="text-white/60 text-xs">
+            All searches are run confidentially under NDA.
+          </p>
+        </div>
       </div>
     </footer>
   );
