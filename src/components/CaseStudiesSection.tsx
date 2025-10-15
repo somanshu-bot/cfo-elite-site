@@ -117,7 +117,7 @@ const CaseStudiesSection = () => {
 
   return (
     <>
-      <section id="case-studies" className="section-padding bg-gradient-subtle">
+      <section id="case-studies" className="py-16 lg:py-24 bg-gradient-to-b from-muted via-muted/95 to-muted-darker">
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-gradient-primary">

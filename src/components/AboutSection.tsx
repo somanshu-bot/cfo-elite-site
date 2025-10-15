@@ -8,7 +8,7 @@ const AboutSection = () => {
   ];
 
   return (
-    <section id="about" className="py-16 lg:py-24 bg-gradient-to-b from-muted via-muted/60 to-background">
+    <section id="about" className="py-16 lg:py-24 bg-gradient-subtle">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
           {/* Image */}

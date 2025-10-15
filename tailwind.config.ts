@@ -39,6 +39,7 @@ export default {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
+          darker: "hsl(var(--muted-darker))",
         },
         accent: {
           DEFAULT: "hsl(var(--accent))",
@@ -72,6 +73,7 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-accent': 'var(--gradient-accent)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-subtle': 'var(--gradient-subtle)',
       },
       boxShadow: {
         'premium': 'var(--shadow-premium)',

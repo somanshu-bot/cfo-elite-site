@@ -32,7 +32,7 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-24 bg-background border-y border-border">
+    <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (

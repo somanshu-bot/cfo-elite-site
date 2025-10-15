@@ -1,30 +1,54 @@
-import { Check } from "lucide-react";
+import { Card, CardContent } from "@/components/ui/card";
 
 const WhenToCallSection = () => {
   const scenarios = [
-    "Scale-up to Series C / IPO readiness",
-    "Cash-flow stress or margin dilution",
-    "ERP/controls revamp; audit findings",
-    "Founder CFO succession or PE entry",
-    "Multi-country, multi-entity consolidation"
+    {
+      title: "Scale-up to Series C / IPO readiness",
+      context: "Growth transition"
+    },
+    {
+      title: "Cash-flow stress or margin dilution",
+      context: "Financial discipline"
+    },
+    {
+      title: "ERP/controls revamp; audit findings",
+      context: "Governance upgrade"
+    },
+    {
+      title: "Founder CFO succession or PE entry",
+      context: "Leadership transition"
+    },
+    {
+      title: "Multi-country, multi-entity consolidation",
+      context: "Complex structure"
+    }
   ];
 
   return (
-    <section className="py-12 bg-gradient-to-br from-muted via-background to-muted">
+    <section className="py-16 lg:py-20 bg-background">
       <div className="container mx-auto px-6">
-        <div className="max-w-5xl mx-auto">
-          <h3 className="text-2xl lg:text-3xl font-heading font-bold mb-8 text-center text-foreground">
+        <div className="max-w-6xl mx-auto">
+          <h3 className="text-3xl lg:text-4xl font-heading font-bold mb-12 text-center text-foreground">
             When to call us
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {scenarios.map((scenario, index) => (
-              <div 
+              <Card 
                 key={index}
-                className="flex items-start gap-3 p-4 bg-background rounded-lg border border-border hover:border-primary/50 transition-colors"
+                className="group relative overflow-hidden bg-card hover:shadow-premium transition-all duration-300 border-l-4 border-l-primary/0 hover:border-l-primary"
               >
-                <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                <p className="text-sm text-foreground leading-snug">{scenario}</p>
-              </div>
+                <CardContent className="p-6">
+                  <div className="absolute top-0 right-0 w-20 h-20 bg-primary/5 rounded-bl-full -mr-10 -mt-10 group-hover:bg-primary/10 transition-colors" />
+                  <div className="relative">
+                    <div className="text-xs font-semibold text-primary mb-3 uppercase tracking-wide">
+                      {scenario.context}
+                    </div>
+                    <h4 className="text-base font-semibold text-foreground leading-snug">
+                      {scenario.title}
+                    </h4>
+                  </div>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>

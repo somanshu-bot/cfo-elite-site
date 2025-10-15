@@ -58,7 +58,7 @@ const HeroSection = () => {
                 <p className="text-white/90 text-sm font-semibold">First shortlist in 10 business days</p>
               </div>
               <div className="bg-white/10 backdrop-blur-md rounded-lg px-4 py-2 border border-white/20">
-                <p className="text-white/90 text-sm font-semibold">Board-ready finalists in 5–6 weeks</p>
+                <p className="text-white/90 text-sm font-semibold">Board-ready finalists in 6–8 weeks</p>
               </div>
             </div>
             

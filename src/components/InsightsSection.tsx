@@ -48,7 +48,7 @@ const InsightsSection = () => {
   };
 
   return (
-    <section id="insights" className="py-16 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-muted/50 border-t-2 border-primary/10">
+    <section id="insights" className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
