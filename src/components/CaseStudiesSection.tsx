@@ -26,16 +26,15 @@ const caseStudies: CaseStudy[] = [
     company: "Global Tech Solutions",
     industry: "SaaS",
     challenge: "IPO-track CFO with public-company readiness",
-    summary: "First shortlist in 9 business days; 3 board-ready finalists in 3 weeks.",
+    summary: "First shortlist in 9 business days; 3 board-ready finalists within 5–6 weeks.",
     fullStory: {
       background: "Mandate: IPO-track CFO with public-company readiness.",
       approach: "Outcome (pre-joining):",
       outcome: "",
       metrics: [
-        "First shortlist in 9 business days; 3 board-ready finalists in 3 weeks.",
+        "First shortlist in 9 business days; 3 board-ready finalists within 5–6 weeks.",
         "Deep references completed (6 per finalist) and background checks cleared.",
-        "Offer closed at market-median with equity aligned to milestones.",
-        "Joining date secured within 60 days via negotiated notice-period buyout."
+        "Offer closed at market-median with equity aligned to milestones; joining date secured within 60 days."
       ]
     }
   },
@@ -52,9 +51,8 @@ const caseStudies: CaseStudy[] = [
       outcome: "",
       metrics: [
         "27-profile longlist across listed/PE peers; 5 capex-seasoned finalists.",
-        "Plant-case interview enabled apples-to-apples evaluation; board aligned in 2 reviews.",
-        "Offer acceptance in 11 days from finalist selection; relocation support locked.",
-        "Early succession risk flagged for #2 finance lead; backfill slate readied."
+        "Plant-case interview enabled apples-to-apples evaluation; board aligned in two reviews.",
+        "Offer acceptance in 11 days from finalist selection; relocation support locked."
       ]
     }
   },
@@ -72,8 +70,7 @@ const caseStudies: CaseStudy[] = [
       metrics: [
         "34 profiles mapped; 4 finalists with marketplace + offline exposure.",
         "Compensation benchmark shared to avoid overpaying; closed within target band.",
-        "Strict confidentiality maintained; coded outreach prevented market leakage.",
-        "90-day onboarding plan drafted with CEO/CHRO pre-notice."
+        "90-day onboarding plan drafted with CEO/CHRO pre-notice; confidentiality maintained with coded outreach."
       ]
     }
   },
@@ -91,8 +88,7 @@ const caseStudies: CaseStudy[] = [
       metrics: [
         "Finalists blended Big-4 + operator backgrounds; audit/governance case used.",
         "Reference triangulation surfaced a red flag; finalist replaced without delay.",
-        "Term sheet agreed in 7 days; ESOP and clawback aligned with fund.",
-        "Board sign-off achieved in first review."
+        "Term sheet agreed in 7 days; ESOP and clawback aligned with fund; board sign-off in first review."
       ]
     }
   },
@@ -109,7 +105,7 @@ const caseStudies: CaseStudy[] = [
       outcome: "",
       metrics: [
         "3 finalists with structured-finance depth; lender references done pre-offer.",
-        "Offer closed within 4 weeks of kick-off; buyout and joining date negotiated.",
+        "Offer closed within 4 weeks of kick-off; notice-period buyout negotiated.",
         "Role charter and reporting cadence agreed between Founder/PE/CEO pre-acceptance."
       ]
     }
