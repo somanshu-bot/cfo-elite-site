@@ -34,6 +34,11 @@ const StatsSection = () => {
   return (
     <section className="py-16 lg:py-24 bg-background">
       <div className="container mx-auto px-6">
+        <div className="max-w-2xl mx-auto text-center mb-12">
+          <h2 className="text-4xl lg:text-5xl font-heading font-bold text-foreground">
+            Experience & Network
+          </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <Card key={index} className="border-none shadow-none bg-transparent">
@@ -46,7 +51,7 @@ const StatsSection = () => {
                 <div className="text-sm text-muted-foreground mb-4">{stat.description}</div>
                 
                 {stat.publicationLogos && (
-                  <div className="flex flex-wrap items-center justify-center gap-6 mt-4">
+                  <div className="flex items-center justify-center gap-4 mt-4 flex-wrap">
                     {stat.publicationLogos.map((logo, idx) => (
                       <a 
                         key={idx}
@@ -58,7 +63,7 @@ const StatsSection = () => {
                         <img 
                           src={logo.src}
                           alt={logo.alt}
-                          className={`w-auto object-contain ${idx === 0 ? 'h-14' : idx === 2 ? 'h-12' : 'h-10'}`}
+                          className="h-10 w-auto object-contain"
                         />
                       </a>
                     ))}
