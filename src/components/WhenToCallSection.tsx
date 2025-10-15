@@ -25,7 +25,7 @@ const WhenToCallSection = () => {
   ];
 
   return (
-    <section className="py-16 lg:py-20 bg-background">
+    <section className="py-16 lg:py-20 bg-gradient-to-b from-muted via-muted-darker to-background">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl lg:text-4xl font-heading font-bold mb-12 text-center text-foreground">
