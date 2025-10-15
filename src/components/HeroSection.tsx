@@ -27,12 +27,12 @@ const HeroSection = () => {
         <div className="max-w-4xl">
           {/* Main Headline */}
           <h1 className="text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-8 leading-tight animate-fade-in text-white drop-shadow-lg">
-            Hire a CFO Who Moves the Business
+            CFO & Finance Leadership Search — Built for Outcomes
           </h1>
 
           {/* Subtext */}
           <p className="text-xl lg:text-2xl text-white/90 mb-12 leading-relaxed animate-fade-in max-w-3xl drop-shadow-md">
-            We help founders and CHROs hire CFOs who improve controls, unlock growth capital, and steady execution.
+            Hire a CFO who steadies controls and enables growth. Built for founders and CHROs who want a disciplined, confidential search.
           </p>
 
           {/* CTA Buttons */}
@@ -56,13 +56,40 @@ const HeroSection = () => {
           </div>
 
           {/* Proof Bar */}
-          <div className="animate-fade-in bg-white/10 backdrop-blur-md rounded-lg p-6 border border-white/20">
-            <p className="text-white/90 text-sm lg:text-base mb-4 text-center">
-              300+ finance leadership assessments • 50+ CFO mandates • Featured in The Economic Times, Times of India
+          <div className="animate-fade-in space-y-4">
+            {/* Three compact badges */}
+            <div className="flex flex-wrap gap-4 mb-4">
+              <div className="bg-white/10 backdrop-blur-md rounded-lg px-4 py-2 border border-white/20">
+                <p className="text-white/90 text-sm font-semibold">First shortlist in 10 business days</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md rounded-lg px-4 py-2 border border-white/20">
+                <p className="text-white/90 text-sm font-semibold">Board-ready finalists in 3–4 weeks</p>
+              </div>
+              <div className="bg-white/10 backdrop-blur-md rounded-lg px-4 py-2 border border-white/20">
+                <p className="text-white/90 text-sm font-semibold">Deep references completed pre-offer</p>
+              </div>
+            </div>
+            
+            {/* Secondary proof line */}
+            <p className="text-white/80 text-sm text-center">
+              300+ finance leadership assessments • 50+ CFO mandates • Pan-India CFO network
             </p>
-            <div className="flex items-center justify-center gap-8 flex-wrap">
-              <img src={economicTimesLogo} alt="The Economic Times" className="h-6 opacity-90" />
-              <img src={timesOfIndiaLogo} alt="Times of India" className="h-6 opacity-90" />
+            
+            {/* Micro trust line */}
+            <p className="text-white/60 text-xs text-center">
+              Trusted by PE-backed, listed and high-growth companies (anonymised).
+            </p>
+            
+            {/* Recent Mandates ticker */}
+            <div className="bg-white/5 backdrop-blur-md rounded-lg p-3 border border-white/10 overflow-hidden">
+              <div className="flex animate-marquee">
+                <span className="text-white/70 text-xs whitespace-nowrap pr-8">
+                  CFO — PE Consumer | Closed in 5 weeks (Mumbai) • Group CFO — Listed Industrial | Closed in 6 weeks (Pune) • CFO Succession — Tech Services | Closed in 4 weeks (Bengaluru)
+                </span>
+                <span className="text-white/70 text-xs whitespace-nowrap pr-8">
+                  CFO — PE Consumer | Closed in 5 weeks (Mumbai) • Group CFO — Listed Industrial | Closed in 6 weeks (Pune) • CFO Succession — Tech Services | Closed in 4 weeks (Bengaluru)
+                </span>
+              </div>
             </div>
           </div>
         </div>

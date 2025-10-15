@@ -25,17 +25,17 @@ const caseStudies: CaseStudy[] = [
     icon: <TrendingUp className="w-8 h-8 text-primary" />,
     company: "Global Tech Solutions",
     industry: "SaaS",
-    challenge: "IPO-track CFO after rapid ARR growth",
-    summary: "Close-rate +19%, DSO −14 days, monthly flash in 30 days.",
+    challenge: "IPO-track CFO with public-company readiness",
+    summary: "First shortlist in 9 business days; 3 board-ready finalists in 3 weeks.",
     fullStory: {
-      background: "A fast-growing SaaS company needed a CFO capable of taking them through IPO readiness while maintaining operational excellence during hypergrowth.",
-      approach: "We focused on candidates with proven track records in IPO preparation, cash management discipline, and building scalable finance operations.",
-      outcome: "The appointed CFO implemented robust financial controls, accelerated the close process, and established investor-grade reporting systems.",
+      background: "Mandate: IPO-track CFO with public-company readiness.",
+      approach: "Outcome (pre-joining):",
+      outcome: "",
       metrics: [
-        "Close-rate improved by 19%",
-        "Days Sales Outstanding reduced by 14 days",
-        "Monthly flash reporting implemented in 30 days",
-        "IPO-ready financial infrastructure established"
+        "First shortlist in 9 business days; 3 board-ready finalists in 3 weeks.",
+        "Deep references completed (6 per finalist) and background checks cleared.",
+        "Offer closed at market-median with equity aligned to milestones.",
+        "Joining date secured within 60 days via negotiated notice-period buyout."
       ]
     }
   },
@@ -44,17 +44,17 @@ const caseStudies: CaseStudy[] = [
     icon: <Users className="w-8 h-8 text-primary" />,
     company: "Heritage Manufacturing Ltd.",
     industry: "Industrial",
-    challenge: "Controls and cost discipline",
-    summary: "Opex −3.9%, vendor terms improved, SAP controls tightened.",
+    challenge: "Controls-focused CFO for multi-plant operations",
+    summary: "27-profile longlist across listed/PE peers; 5 capex-seasoned finalists.",
     fullStory: {
-      background: "A 50-year-old manufacturing company needed to modernize financial controls and implement cost discipline without disrupting operations.",
-      approach: "We searched for candidates with deep experience in manufacturing finance, ERP implementations, and change management in traditional industries.",
-      outcome: "The new CFO successfully tightened controls, negotiated better vendor terms, and implemented SAP-based financial discipline across operations.",
+      background: "Mandate: Controls-focused CFO for multi-plant operations.",
+      approach: "Outcome (pre-joining):",
+      outcome: "",
       metrics: [
-        "Operating expenses reduced by 3.9%",
-        "Vendor payment terms improved by 15 days",
-        "SAP financial controls tightened and standardized",
-        "Monthly variance analysis implemented"
+        "27-profile longlist across listed/PE peers; 5 capex-seasoned finalists.",
+        "Plant-case interview enabled apples-to-apples evaluation; board aligned in 2 reviews.",
+        "Offer acceptance in 11 days from finalist selection; relocation support locked.",
+        "Early succession risk flagged for #2 finance lead; backfill slate readied."
       ]
     }
   },
@@ -62,18 +62,55 @@ const caseStudies: CaseStudy[] = [
     id: 3,
     icon: <Target className="w-8 h-8 text-primary" />,
     company: "Retail Innovation Group",
-    industry: "D2C/Omni",
-    challenge: "Unit-economics recovery; PE reporting",
-    summary: "GM% +3.2 pts, markdown loss −18%, 4-1-4 cash rhythm introduced.",
+    industry: "Omnichannel/D2C",
+    challenge: "Growth CFO with unit-economics discipline",
+    summary: "34 profiles mapped; 4 finalists with marketplace + offline exposure.",
     fullStory: {
-      background: "A retail group backed by PE needed to improve unit economics and implement institutional-grade financial reporting and cash management.",
-      approach: "Our search prioritized CFOs with retail experience, PE reporting expertise, and a track record of turning around unit economics.",
-      outcome: "The CFO improved gross margins, reduced inventory losses, and established disciplined cash management practices aligned with PE expectations.",
+      background: "Mandate: Growth CFO with unit-economics discipline.",
+      approach: "Outcome (pre-joining):",
+      outcome: "",
       metrics: [
-        "Gross margin improved by 3.2 percentage points",
-        "Markdown losses reduced by 18%",
-        "4-1-4 cash rhythm and reporting introduced",
-        "PE-grade financial reporting implemented"
+        "34 profiles mapped; 4 finalists with marketplace + offline exposure.",
+        "Compensation benchmark shared to avoid overpaying; closed within target band.",
+        "Strict confidentiality maintained; coded outreach prevented market leakage.",
+        "90-day onboarding plan drafted with CEO/CHRO pre-notice."
+      ]
+    }
+  },
+  {
+    id: 4,
+    icon: <Users className="w-8 h-8 text-primary" />,
+    company: "Healthcare Services Network",
+    industry: "Healthcare",
+    challenge: "PE-backed CFO with strong governance",
+    summary: "Finalists blended Big-4 + operator backgrounds; audit/governance case used.",
+    fullStory: {
+      background: "Mandate: PE-backed CFO with strong governance.",
+      approach: "Outcome (pre-joining):",
+      outcome: "",
+      metrics: [
+        "Finalists blended Big-4 + operator backgrounds; audit/governance case used.",
+        "Reference triangulation surfaced a red flag; finalist replaced without delay.",
+        "Term sheet agreed in 7 days; ESOP and clawback aligned with fund.",
+        "Board sign-off achieved in first review."
+      ]
+    }
+  },
+  {
+    id: 5,
+    icon: <TrendingUp className="w-8 h-8 text-primary" />,
+    company: "Digital Infrastructure Player",
+    industry: "Infrastructure",
+    challenge: "Project-finance CFO for multi-entity structure",
+    summary: "3 finalists with structured-finance depth; lender references done pre-offer.",
+    fullStory: {
+      background: "Mandate: Project-finance CFO for multi-entity structure.",
+      approach: "Outcome (pre-joining):",
+      outcome: "",
+      metrics: [
+        "3 finalists with structured-finance depth; lender references done pre-offer.",
+        "Offer closed within 4 weeks of kick-off; buyout and joining date negotiated.",
+        "Role charter and reporting cadence agreed between Founder/PE/CEO pre-acceptance."
       ]
     }
   }
@@ -88,11 +125,8 @@ const CaseStudiesSection = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-gradient-primary">
-              Success Stories
+              Success Stories (Pre-Joining Outcomes)
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real results from our CFO placements across industries and growth stages
-            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -111,13 +145,13 @@ const CaseStudiesSection = () => {
                     {caseStudy.industry}
                   </div>
                   <div className="text-sm text-muted-foreground font-semibold mb-4">
-                    Challenge:
+                    Mandate:
                   </div>
                   <p className="text-muted-foreground mb-4">
                     {caseStudy.challenge}
                   </p>
                   <div className="text-sm text-muted-foreground font-semibold mb-2">
-                    Result:
+                    Outcome:
                   </div>
                   <p className="text-foreground mb-6">
                     {caseStudy.summary}
@@ -127,7 +161,7 @@ const CaseStudiesSection = () => {
                     className="w-full group"
                     onClick={() => setSelectedCase(caseStudy)}
                   >
-                    Read Full Story
+                    Read story
                     <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                   </Button>
                 </CardContent>
@@ -153,40 +187,19 @@ const CaseStudiesSection = () => {
               
               <div className="space-y-6 mt-6">
                 <div>
-                  <h4 className="text-xl font-heading font-bold mb-3 text-foreground">
-                    Background
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
+                  <p className="text-muted-foreground leading-relaxed font-semibold">
                     {selectedCase.fullStory.background}
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-heading font-bold mb-3 text-foreground">
-                    Our Approach
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {selectedCase.fullStory.approach}
-                  </p>
-                </div>
-
-                <div>
-                  <h4 className="text-xl font-heading font-bold mb-3 text-foreground">
-                    Outcome
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed mb-4">
-                    {selectedCase.fullStory.outcome}
                   </p>
                 </div>
 
                 <div className="bg-muted/30 p-6 rounded-lg">
                   <h4 className="text-xl font-heading font-bold mb-4 text-foreground">
-                    Key Metrics
+                    {selectedCase.fullStory.approach}
                   </h4>
-                  <ul className="space-y-2">
+                  <ul className="space-y-3">
                     {selectedCase.fullStory.metrics.map((metric, index) => (
                       <li key={index} className="flex items-start">
-                        <span className="text-primary mr-2">✓</span>
+                        <span className="text-primary mr-2">•</span>
                         <span className="text-foreground">{metric}</span>
                       </li>
                     ))}
