@@ -48,12 +48,12 @@ const InsightsSection = () => {
   };
 
   return (
-    <section id="insights" className="py-16 lg:py-24 bg-background">
+    <section id="insights" className="py-16 lg:py-24 bg-gradient-to-b from-background via-muted/30 to-muted/50 border-t-2 border-primary/10">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-foreground">
-              Insights & Research
+              Insights & research
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Thought leadership driving CFO hiring conversations

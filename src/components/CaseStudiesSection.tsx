@@ -121,7 +121,7 @@ const CaseStudiesSection = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-gradient-primary">
-              Success Stories (Pre-Joining Outcomes)
+              Success stories
             </h2>
           </div>
 

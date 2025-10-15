@@ -22,7 +22,7 @@ const AboutSection = () => {
           {/* Content */}
           <div>
             <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6 text-foreground">
-              Our Expertise in CFO Hiring
+              Our expertise in CFO hiring
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               CFO Elite is Ishwa Consulting's specialized platform that showcases our unmatched expertise in identifying and placing senior finance leaders across India's fastest-growing organizations.
@@ -33,7 +33,7 @@ const AboutSection = () => {
 
             <div className="mb-8">
               <h3 className="text-2xl font-heading font-semibold mb-6 text-foreground">
-                Our Approach
+                Our approach
               </h3>
               <ul className="space-y-4">
                 {approach.map((item, index) => (
