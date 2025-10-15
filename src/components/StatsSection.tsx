@@ -39,8 +39,10 @@ const StatsSection = () => {
             Experience & Network
           </h2>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {stats.map((stat, index) => (
+        
+        {/* First row: First two stats */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-8">
+          {stats.slice(0, 2).map((stat, index) => (
             <Card key={index} className="border-none shadow-none bg-transparent">
               <CardContent className="p-6 text-center">
                 <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mx-auto mb-6">
@@ -49,29 +51,41 @@ const StatsSection = () => {
                 <div className="text-4xl font-heading font-bold text-accent mb-3">{stat.number}</div>
                 <div className="text-lg font-semibold text-foreground mb-2">{stat.label}</div>
                 <div className="text-sm text-muted-foreground mb-4">{stat.description}</div>
-                
-                {stat.publicationLogos && (
-                  <div className="flex items-center justify-center gap-4 mt-4 flex-wrap">
-                    {stat.publicationLogos.map((logo, idx) => (
-                      <a 
-                        key={idx}
-                        href={logo.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="transition-opacity hover:opacity-70"
-                      >
-                        <img 
-                          src={logo.src}
-                          alt={logo.alt}
-                          className="h-10 w-auto object-contain"
-                        />
-                      </a>
-                    ))}
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Second row: Featured section spanning full width */}
+        <div className="max-w-4xl mx-auto">
+          <Card className="border-none shadow-none bg-transparent">
+            <CardContent className="p-6 text-center">
+              <div className="w-16 h-16 rounded-full bg-primary/5 flex items-center justify-center mx-auto mb-6">
+                <Award className="w-8 h-8 text-primary" />
+              </div>
+              <div className="text-4xl font-heading font-bold text-accent mb-3">Featured</div>
+              <div className="text-lg font-semibold text-foreground mb-2">Top Media Coverage</div>
+              <div className="text-sm text-muted-foreground mb-4">Recognized thought leadership in CFO hiring</div>
+              
+              <div className="flex items-center justify-center gap-6 mt-4 flex-wrap">
+                {stats[2].publicationLogos?.map((logo, idx) => (
+                  <a 
+                    key={idx}
+                    href={logo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="transition-opacity hover:opacity-70"
+                  >
+                    <img 
+                      src={logo.src}
+                      alt={logo.alt}
+                      className={`w-auto object-contain ${idx === 0 ? 'h-16' : 'h-10'}`}
+                    />
+                  </a>
+                ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
