@@ -46,7 +46,7 @@ const Footer = () => {
               </a>
             </div>
             <p className="text-white/80 leading-relaxed mb-4 text-sm">
-              India's premier CFO leadership partner, delivering bull's-eye precision in executive search, 
+              Premier CFO leadership partner, delivering bull's-eye precision in executive search, 
               strategic insights, and exclusive community for finance leaders.
             </p>
             <p className="text-white/60 text-xs leading-relaxed mb-6 italic">
