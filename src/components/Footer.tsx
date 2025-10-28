@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { MapPin, Linkedin, Twitter } from "lucide-react";
+import { MapPin, Linkedin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -62,13 +62,6 @@ const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </a>
-              <a 
-                href="#" 
-                className="text-white/70 hover:text-primary transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </a>
             </div>
           </div>
