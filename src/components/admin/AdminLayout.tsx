@@ -13,20 +13,28 @@ const AdminLayout = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    checkUser();
-  }, []);
+    // Check for existing session first
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      if (!session) {
+        navigate("/login");
+        return;
+      }
+      setUser(session.user);
+      setLoading(false);
+    });
 
-  const checkUser = async () => {
-    const { data: { user } } = await supabase.auth.getUser();
-    
-    if (!user) {
-      navigate("/login");
-      return;
-    }
+    // Set up auth state listener
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      if (!session) {
+        navigate("/login");
+      } else {
+        setUser(session.user);
+        setLoading(false);
+      }
+    });
 
-    setUser(user);
-    setLoading(false);
-  };
+    return () => subscription.unsubscribe();
+  }, [navigate]);
 
   const handleLogout = async () => {
     await supabase.auth.signOut();
