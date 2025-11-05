@@ -8,7 +8,7 @@ const StatsSection = () => {
   const stats = [
     {
       icon: Target,
-      number: "300+",
+      number: "1000+",
       label: "CFO & Finance Leadership Assessments",
       description: "Deep evaluation across listed and unlisted firms"
     },
